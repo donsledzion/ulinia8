@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ostatnia-wioska-przed-szwecja index.html
+RewriteRule zwierzeta-w-naszym-domu bestiariusz.html
+RewriteRule nasza-piekna-okolica okolica.html
+RewriteRule wynajmij-nocleg-nad-morzem oferta.html
+RewriteRule kontakt-z-nami-Ulinia-8 kontakt.html

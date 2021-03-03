@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>Ulinia, ostatnia wioska przed Szwecją</title>
+	<meta name="description" content="Strona domowa Domu nr 8 w Ulini">
+	<meta name="keywords" content="Ulinia, 8, Ostatnia wioska przed Szwecją, Bałtyk, Morze, Łeba, Stilo, Sasino, Sarbsk, Wicko, Sea Park">
+	<meta name="author" content="Adam Chojaczyk">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+	<link rel="stylesheet" href="css/main.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+	
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#b91d47">
+	<meta name="theme-color" content="#ffffff">
+	
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous">
+	</script>
+	
+	<script type="text/javascript">
+		
+		var bannum = Math.floor(Math.random()*5)+1;
+		
+		function hideIt()
+			{
+				$("#slider").fadeOut(1000) ;
+			}
+			
+		function changeslide()
+		{
+			bannum++ ; if (bannum>5) bannum = 1 ;
+			
+			var bannerfile = "<img src=\"img/baner_"+bannum+".jpg\" height=\"150\" width=\"1000\"/>";
+			
+			document.getElementById("slider").innerHTML = bannerfile;
+			
+			$("#slider").fadeIn(1000);
+			
+			setTimeout("changeslide()",8000) ;
+			setTimeout("hideIt()",7000) ;
+		}
+		
+	</script>
+	
+</head>
+
+<body onload="changeslide()">
+
+	<header>
+		<div id="slider"></div>
+	
+	</header>
+	
+	<nav class="topnav">
+	
+		<a href="ostatnia-wioska-przed-szwecja" class="toplink"><div class="topbutton">Dom</div></a>
+		<a href="zwierzeta-w-naszym-domu" class="toplink"><div class="topbutton">Bestiariusz</div></a>
+		<a href="nasza-piekna-okolica" class="toplink"><div class="topbutton">Okolica</div></a>
+		<a href="wynajmij-nocleg-nad-morzem" class="toplink"><div class="topbutton">Oferta</div></a>
+		<a href="kontakt-z-nami-Ulinia-8" class="toplink"><div class="topbutton">Kontakt</div></a>
+		
+	</nav>
+	
+	<main>
+		<article>
+			<h1 class="h1main">Dom dom dom!</h1>
+			
+			<div style="font-size:30px; padding:45px 15px 25px 25px; text-align:justify; float:left; width:350px;">
+				Rodzinne siedlisko, w którym wydarzyło się wiele niesamowitych historii - zarówno naszych, rodzinnych jak i rodzinnych nie naszych. 
+				Dom powstał najprawdopodobniej jako dom zarządcy dla budującego się majątku gospodarskiego w Ulinii - pobliskiego pałacu i folwarku. Ta góra drewna i gliny, przykryta sypiącym się od lat dachem jest w rękach rodzinnych od kilkudziesięciu lat i wychowała kilka pokoleń Chojaczyków, a i nie tylko. Obecnie na nas (Agnieszkę i Adama) spadła odpowiedzialność, ale i wielki przywilej zawiadywania Domem. Tak Domem z wielkiej litery bo to Dom z duszą.
+				Jeśli szukacie wyrafinowanego i luksusowego miejsca do kokoszenia się w opcji all inclusive to szukajcie dalej. 
+				Jeśli szukacie zacisznego, klimatycznego i strategicznie usytuowanego miejsca na wakacje nad polskim morzem to świetnie trafiliście.
+			</div>
+			
+			<div style="margin-left:auto; margin-right:auto; text-align:center; margin-top:30px; float:left; padding:25px;">
+				<img src="img/dom.jpg" style="display:block; padding-bottom:30px;">
+				<img src="img/dom2.jpg" style="display:block; padding-top:30px;">
+				
+			</div>
+			
+			<div style="clear:both;"></div>
+			
+		</article>	
+		<div class="socialdivs">
+			<a href="https://www.facebook.com/Uliniaosiem-613289289150976/" target="_blank">
+				<div class="fb"><i class="icon-facebook-official"></i></div>
+			</a>
+				
+			<a href="https://www.youtube.com/channel/UClkMGDhFWon0SrCm6_2z02g" target="_blank">
+				<div class="yt"><i class="icon-youtube-squared"></i></div>
+			</a>
+				
+			<a href="https://www.instagram.com/ulinia.osiem/" target="_blank">
+				<div class="in"><i class="icon-instagram"></i></div>
+			</a>
+				
+			<div style="clear:both;"></div>
+		</div>
+	</main>
+	
+	<footer>
+		Ulinia8.com &copy; 2019 Dziękujemy za wizytę na naszej stronie i zapraszamy osobiście!
+		<br/>
+		<a href="img/stachunadachu.zip" target="_blank">STACHU NA DACHU - PACZKA</a>		
+	</footer>
+
+</body>
+</html>
+<?php
+	$_SERVER['HTTPS']='on';
+?>
