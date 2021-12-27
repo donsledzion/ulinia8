@@ -1,0 +1,78 @@
+
+
+
+/*===========================
+     08.COFFEE MENU css 
+===========================*/
+
+
+.coffee_menu_wrapper{}
+
+.single_coffee_menu{
+    & .coffee_menu_image{
+        & img{
+            border-radius: 50%;
+            border: 9px solid $white;
+            
+            @media #{$xs}{
+                width: 70px;
+                border: 3px solid $white;
+            }
+            @media #{$sm}{
+                width: auto;
+                border: 9px solid $white;
+            }
+        }
+    }
+    & .coffee_menu_content{
+        padding-left: 30px;
+        
+        @media #{$xs}{
+            padding-left: 15px;
+        }
+        @media #{$sm}{
+            padding-left: 30px;
+        }
+        
+        & .coffee_name{
+            font-size: 24px;
+            font-weight: 700;
+            
+            @media #{$xs}{
+                font-size: 18px;
+            }
+            @media #{$sm}{
+                font-size: 24px;
+            }
+            
+            & .price{
+                float: right;
+                color: $theme-color;
+            }
+        }
+        & p{
+            margin-top: 15px;
+            
+            @media #{$xs}{
+                font-size: 14px;
+            }
+            @media #{$sm}{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

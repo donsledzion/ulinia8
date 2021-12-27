@@ -1,0 +1,238 @@
+
+
+
+/*===========================
+        11.FOOTER css 
+===========================*/
+
+
+.footer_area{
+    position: relative;
+    background-color: $heading-color;
+    z-index: 5;
+}
+
+.footer_shape{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.32;
+    z-index: -1;
+    
+    & img{
+        @media #{$md}{
+            width: 271px;
+        }
+        @media #{$xs}{
+            width: 171px;
+        }
+    }
+}
+
+.footer_subscribe{
+    
+}
+
+.subscribe_title{
+    & .title{
+        color: $white;
+        font-size: 44px;
+        font-weight: 700;
+        
+        @media #{$xs}{
+            font-size: 30px;
+        }
+    }
+    
+    & p{
+        margin-top: 15px;
+        color: $white;
+    }
+}
+
+.subscribe_form{
+    padding-right: 85px;
+    position: relative;
+    
+    & input{
+        width: 100%;
+        height: 55px;
+        padding: 0 25px;
+        border: 1px solid $white;
+        background: none;
+        border-radius: 5px;
+        color: $white;
+    }
+    & button{
+        width: 55px;
+        height: 55px;
+        padding: 0;
+        background-color: $theme-color;
+        color: $white;
+        border: 0;
+        font-size: 28px;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+
+.footer_widget{
+    & .footer_title{
+        font-size: 24px;
+        color: $white;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 25px;
+        
+        &::before{
+            position: absolute;
+            content: '';
+            width: 40px;
+            height: 3px;
+            border-radius: 50px;
+            background-color: $theme-color;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+
+.footer_about{
+    & p{
+        color: $white;
+        margin-top: 25px;
+    }
+    & .social{
+        margin-top: 25px;
+        
+        & li{
+            display: inline-block;
+            
+            & + li{
+                margin-left: 10px;
+            }
+            
+            & a{
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                background-color: $black-soft;
+                font-size: 16px;
+                color: $white;
+                border-radius: 5px;
+                text-align: center;
+                @include transition(0.3s);
+                
+                &:hover{
+                    background-color: $theme-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+.footer_link_wrapper{
+    & .footer_link{
+        &:last-child{
+            padding-left: 40px;
+            
+            @media #{$md}{
+                padding-left: 50px;
+            }
+            @media #{$xs}{
+                padding-left: 0;
+            }
+            @media #{$sm}{
+                padding-left: 50px;
+            }
+        }
+        
+        & ul{
+            padding-top: 15px;
+            
+            & li{
+                margin-top: 10px;
+                font-size: 16px;
+                color: $white;
+                
+                & a{
+                    color: $white;
+                    @include transition(0.3s);
+                    
+                    &:hover{
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.footer_instagram{
+    & .instagram_image{
+        margin-left: -8px;
+        margin-right: -8px;
+        padding-top: 10px;
+        
+        & a{
+            margin: 0 8px;
+            margin-top: 15px;
+            
+            & img{
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+
+.footer_copyright{
+    & .copyright{
+        padding: 25px 0;
+        border-top: 1px solid rgba($border-color, 0.33);
+        
+        & p{
+            font-size: 16px;
+            color: $white;
+        }
+    }
+}
+
+
+
+/*===== BACK TO TOP =====*/
+
+.back-to-top{
+    font-size: 20px;
+    color: $white;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: $theme-color;
+    text-align: center;
+    z-index: 99;
+    @include transition(0.3s);
+    display: none;
+    
+    &:hover{
+        color: $white;
+        background-color: $theme-color;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+
+
+
+/*===========================
+    03.COFFEE css 
+===========================*/
+
+.coffee_area{}
+
+.single_coffee{
+    & .coffee_image{
+        & img{
+            border-radius: 50%;
+        }
+    }
+    & .coffee_content{
+        margin-top: 25px;
+        
+        & .coffee_title{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        & p{
+            margin-top: 15px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

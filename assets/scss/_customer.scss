@@ -1,0 +1,111 @@
+
+
+
+/*===========================
+      06.CUSTOMER css 
+===========================*/
+
+
+
+
+.single_customer{
+    & .customer_image{
+        & img{
+            width: 236px;
+            height: 297px;
+            object-fit: cover;
+            object-position: center;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            
+            @media #{$lg}{
+                width: 185px;
+            }
+            @media #{$xs}{
+                width: 100%;
+                border-top-right-radius: 10px;
+                border-bottom-left-radius: 0px;
+            }
+        }
+    }
+    & .customer_content{
+        padding: 10px 25px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: 1px solid $border-color;
+        height: 100%;
+        height: 297px;
+        
+        @media #{$xs}{
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 10px;
+        }
+
+        & .customer_content_wrapper{
+            & .author_name{
+                font-size: 18px;
+                font-weight: 700;
+            }
+            & .sub_title{
+                font-size: 15px;
+                color: $body-color;
+                margin-top: 5px;
+            }
+            & p{
+                margin-top: 20px;
+            }
+            & .star{
+                margin-top: 15px;
+
+                & li{
+                    display: inline-block;
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.customer_active{
+    & .slick-dots{
+        margin-top: 30px;
+        text-align: center;
+        width: 100%;
+        
+        & li{
+            display: inline-block;
+            margin: 0 5px;
+            
+            & button{
+                width: 13px;
+                height: 13px;
+                background: none;
+                border: 0;
+                border-radius: 50%;
+                background-color: $body-color;
+                font-size: 0;
+                @include transition(0.3s);
+                @include transform(translateX(-50%));
+            }
+            
+            &.slick-active{
+                & button{
+                    background-color: $theme-color;
+                    border-color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
